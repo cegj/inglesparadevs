@@ -8,48 +8,46 @@
     <title>Inglês para Devs</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="./scripts.js"></script>
 </head>
 
-<body class="container-fluid page_background d-flex flex-column align-items-stretch justify-content-between h-100"
-    onload="carregarDados()">
+<body class="container-fluid page_background d-flex flex-column align-items-stretch justify-content-between h-100" onload="carregarDados()">
     <div class="container">
         <header class="header">
-            <div class="row d-flex justify-content-between">
+            <div class="row d-flex justify-content-between mb-2">
                 <div class="col-6 ps-0 text-white">
                     <img src="../assets/images/logo.png" alt="Inglês para devs" class="img img-fluid w-75">
                 </div>
                 <div class="col-6 d-flex justify-content-end pe-0">
-                    <a class="btn mb-2 login-button text-center" id="loginButton" href="../login/login.html"
-                        role="button" hidden>
+                    <a class="btn mb-2 login-button text-center" id="loginButton" href="../login/login.html" role="button" hidden>
                         <span class="icon login-icon"></span>
                     </a>
 
                     <div id="loginDiv" class="d-flex align-items-center justify-content-center my-2" hidden>
-                        <p class="me-3 text-white" id="welcome" hidden>Bem vindo(a), usuário</p>
-                        <figure class="user-image rounded-circle m-0" hidden>
+                        <p class="me-3" id="welcome" hidden>Bem vindo(a), usuário</p>
+                        <figure class="user-image rounded-circle m-0" hidden onclick="redirectToAlterarCadastro()">
+                            <i class="fa-solid fa-user-large  icon-modify" style=" font-size: xx-large; padding:2px; margin:6px ; display:block;"></i>
                             <img src="" alt="">
                         </figure>
+                        <button onclick="logout()" hidden style="border-radius:20px;"><i class="fa-solid fa-user-large-slash" style="border-radius: 20px;"></i> </button>
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <nav class="navbar navbar-expand-lg px-0">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarToggler">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../pagina-inicial/index.html">Home</a>
+                                    <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active-navlink" aria-current="page" href="#">Teste seu Inglês</a>
+                                    <a class="nav-link active-navlink" aria-current="page" href="../testeIngles/index.html">Teste seu Inglês</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../dicionario-dev/index.html">Dicionário dos Devs</a>
@@ -74,22 +72,28 @@
             </div>
         </header>
     </div>
-    
+
     <div class="container align-self-stretch flex-grow-1">
-        <main class="main-content mt-5">
-             <img class="img img-fluid" src="./drew-beamer-Vc1pJfvoQvY-unsplash.jpg" alt="">
-
-             <div class="d-grid gap-2 mt-5">
-             <a href="https://www.cambridgeenglish.org/test-your-english/general-english/" target="_blank"> 
-
-                <button class="btn btn-warning w-100" style="background-color:#ffda15 ;" type="button">Iniciar Teste</button>
-             
-             </a>
+        <div class="d-flex row mt-5">
+            <div class="d-flex justify-content-center flex-column col-md-6 text-white">
+                <h2 class="text-center">Descubra o seu nível de inglês</h2>
+                <p>
+                    Fazer um teste para descobrir o nível de inglês é essencial para os desenvolvedores que desejam aprimorar suas habilidades nesse idioma. Ao conhecer o seu nível atual, o dev pode identificar suas fortalezas e fraquezas, direcionando seus esforços de estudo de forma mais eficiente. Além disso, o teste oferece uma base sólida para estabelecer metas de aprendizado realistas e medir o progresso ao longo do tempo. Saber o seu nível de inglês também é útil para candidaturas a programas de intercâmbio, bolsas de estudo ou oportunidades profissionais, pois muitas vezes é requisito para avaliar a proficiência no idioma. Portanto, ao realizar o teste, você estará investindo em si mesmo e adquirindo uma valiosa ferramenta para impulsionar seu desenvolvimento no inglês.
+                </p>
             </div>
+            <div class="col-md-6">
+                <img src="../assets/images/home_office.jpg" alt="" class="img-fluid img_display rounded">
+            </div>
+        </div>
+        <div class="w-25 botao-fazer-teste-container">
+            <a href="https://www.cambridgeenglish.org/test-your-english/general-english/" target="_blank">
+                <button class="btn w-100 fazer-teste-btn" type="button">Fazer teste</button>
+            </a>
+        </div>
         </main>
     </div>
     <div class="container p-0">
-        <footer class="footer m-auto">
+        <footer class="footer m-auto p-4">
             <div class="row text-white d-flex">
                 <div class="col-12 d-flex align-items-center justify-content-center">
                     <p class="m-0">Siga-nos:</p>
@@ -103,9 +107,7 @@
                     <button class="icon-button bg-transparent ms-1 border-0">
                         <span class="icon facebook-icon"></span>
                     </button>
-
                 </div>
-
             </div>
             <div class="row text-center text-white mt-2  border-0">
                 <p>&copy; 2022 Inglês para Devs</p>
