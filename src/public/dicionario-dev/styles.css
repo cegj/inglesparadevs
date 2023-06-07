@@ -1,96 +1,48 @@
-body {
-    min-height: 100vh;
-    background-color: rgba(17, 17, 17, 0.85);
-  }
-  
-  /*Icons*/
-  span.login-icon {
-    background-image: url(../assets/icons/log-in.svg);
-  }
-  
-  span.instagram-icon {
-    background-image: url(../assets/icons/instagram.svg);
-  }
-  
-  span.facebook-icon {
-    background-image: url(../assets/icons/facebook.svg);
-  }
-  
-  span.twitter-icon {
-    background-image: url(../assets/icons/twitter.svg);
-  }
-  
-  span.icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  }
-  
-  /*Header properties*/
-  button.login-button {
-    background-color: #ffda15;
-  }
-  
-  .navbar-nav a.active-navlink {
-    color: #ffda15 !important;
-  }
-  
-  .navbar-nav a.active-navlink:hover {
-    font-weight: 400 !important;
-  }
-  
-  nav.navbar {
-    background-color: #59359c;
-  }
-  
-  .navbar-nav a.nav-link {
-    color: #ffffff;
-    font-weight: 400;
-  }
-  
-  .navbar-nav a.nav-link:hover {
-    font-weight: 700;
-  }
-  
-  button.navbar-toggler {
-    border: 1px solid white;
-  }
-  
-  button.navbar-toggler .navbar-toggler-icon {
-    background-image: url(../assets/icons/menu.svg);
-  }
-  
-  .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.25rem #ffffff;
-  }
-  
-  .main-content {
-  }
-  
-  /*Footer properties*/
-  .footer {
-    background-color: #59359c;
-  }
+        /* body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #343434;
+          color: white;
+        }
 
-  /* ********************* Página inicial ****************************** */
-  .about_us figure.dev-avatar {
-      width: 5rem;
-      height: 5rem;
-      filter: drop-shadow(2px 2px 1px #cccccc);
-      background-color: lightgray;
-  }
+        .topnav {
+          overflow: hidden;
+          background-color: #59359c;
+        }
 
-  img.img_display {
-    filter: drop-shadow(3px 3px 2px #cccccc);
-  }
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
 
-  .sidebar{
-    
-  }
+        .topnav a:hover {
 
-  
-  
+          color: white;
+
+          font-weight: 700;
+        }
+
+        .topnav a.active {
+          background-color: #59359c;
+          color: white;
+        }
+
+        .footer {
+
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #59359c;
+          color: white;
+          text-align: center;
+          padding: 15px;
+
+        } */
+
+        .search-btn {
+          cursor: pointer;
+        }
