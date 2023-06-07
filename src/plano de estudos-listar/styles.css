@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  min-height: 100vh;
+  background-color: rgba(17, 17, 17, 0.85);
+}
+
+/*Icons*/
+span.login-icon {
+  background-image: url(../assets/icons/log-in.svg);
+}
+
+span.instagram-icon {
+  background-image: url(../assets/icons/instagram.svg);
+}
+
+span.facebook-icon {
+  background-image: url(../assets/icons/facebook.svg);
+}
+
+span.twitter-icon {
+  background-image: url(../assets/icons/twitter.svg);
+}
+span.like-icon {
+  background-image: url(../assets/icons/like.svg);
+}
+.card {
+  word-wrap: normal;
+}
+
+span.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/*Header properties*/
+a.login-button {
+  background-color: #ffda15;
+}
+
+.navbar-nav a.active-navlink {
+  color: #ffda15 !important;
+}
+
+.navbar-nav a.active-navlink:hover {
+  font-weight: 400 !important;
+}
+
+nav.navbar {
+  background-color: #59359c;
+}
+
+.navbar-nav a.nav-link {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.navbar-nav a.nav-link:hover {
+  font-weight: 700;
+}
+
+button.navbar-toggler {
+  border: 1px solid white;
+}
+
+button.navbar-toggler .navbar-toggler-icon {
+  background-image: url(../assets/icons/menu.svg);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #ffffff;
+}
+
+/*Footer properties*/
+.footer {
+  background-color: #59359c;
+}
+
+.Title {
+  color: #59359c;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  place-content: space-evenly;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+.card-link {
+  color: #ffda15;
+  align-items: center;
+}
+
+.card-link:hover {
+  color: #59359c;
+}
+
+.list-group-item {
+  border: solid;
+  cursor: pointer;
+  border: 1px solid darkgoldenrod;
+  background-color: rgba(17, 17, 17, 0.85);
+  color: blanchedalmond;
+}
+
+.card {
+  background-color: rgba(17, 17, 17, 0.85);
+}
+
+.avançado {
+  background-color: rgba(17, 17, 17, 0.85);
+  cursor: pointer;
+  color: blanchedalmond;
+}
+
+.card-body-title {
+  border: solid;
+  border-color: darkgoldenrod;
+  color: white;
+}
+
+.card-title {
+  color: #59359c;
+}
+
+.title {
+  color: #ffda15;
+  align-self: center;
+}
+
+.btn-roxo {
+  background-color: #59359c;
+  color: white;
+  border-color: darkgoldenrod;
+}
+
+.btn-roxo:hover {
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+figure.user-image {
+  height: 3rem;
+  width: 3rem;
+  background-color: #ccc;
+}

@@ -1,0 +1,160 @@
+body {
+  min-height: 100vh;
+  background-color: rgba(17, 17, 17, 0.85);
+}
+
+label,
+span,
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  color: #fff;
+}
+
+/*Icons*/
+span.login-icon {
+  background-image: url(../assets/icons/log-in.svg);
+}
+
+span.instagram-icon {
+  background-image: url(../assets/icons/instagram.svg);
+}
+
+span.facebook-icon {
+  background-image: url(../assets/icons/facebook.svg);
+}
+
+span.twitter-icon {
+  background-image: url(../assets/icons/twitter.svg);
+}
+
+span.edit-icon {
+  background-image: url(../assets/icons/edit-icon.svg);
+}
+
+span.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/*Header properties*/
+a.login-button {
+  background-color: #ffda15;
+}
+
+.navbar-nav a.active-navlink {
+  color: #ffda15 !important;
+}
+
+.navbar-nav a.active-navlink:hover {
+  font-weight: 400 !important;
+}
+
+nav.navbar {
+  background-color: #59359c;
+}
+
+.navbar-nav a.nav-link {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.navbar-nav a.nav-link:hover {
+  font-weight: 700;
+}
+
+button.navbar-toggler {
+  border: 1px solid white;
+}
+
+button.navbar-toggler .navbar-toggler-icon {
+  background-image: url(../assets/icons/menu.svg);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #ffffff;
+}
+
+.main-content {
+}
+
+/*Footer properties*/
+.footer {
+  background-color: #59359c;
+}
+
+figure.user-image {
+  height: 3rem;
+  width: 3rem;
+  background-color: #ccc;
+}
+
+/*fim template padrão*/
+
+.bg-topico {
+  background-color: #b19cd9;
+}
+
+.bg-topico:hover {
+  background-color: #59359c;
+}
+
+.botao-criar-topico {
+  background-color: #59359c;
+  border-color: #59359c;
+}
+
+.botao-criar-topico:hover {
+  background-color: #b19cd9;
+  border-color: #b19cd9;
+}
+
+.botao-criar-topico:focus {
+  background-color: #b19cd9;
+  border-color: #b19cd9;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.botao-buscar:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.botao-buscar:hover {
+  background-color: #ffdc159a;
+}
+
+.botao-buscar {
+  font-weight: bold;
+  color: white;
+  background-color: #ffc107;
+}
+
+.badge.bg-warning.text-dark {
+    cursor: pointer;
+}
+
+.badge.bg-warning.text-dark:hover {
+  color: #FFF!important;
+  background-color: #59359c!important;
+}

@@ -1,0 +1,27 @@
+h1 {
+    font-size: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.button_primary {
+    color: #FFF;
+    background-color: #59359c;
+}
+
+.button_primary:hover {
+    background-color: #b19cd9;
+    color: #FFF;
+}
+
+.button_primary:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }

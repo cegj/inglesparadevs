@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inglês para Devs</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b7cb4b5656.js" crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+    <script src="../globalScript.js"></script>
+</head>
+
+<body class="container-fluid page_background d-flex flex-column align-items-stretch justify-content-between h-100"
+    onload="carregarDados()">
+    <div class="container">
+        <header class="header">
+            <div class="row d-flex justify-content-between">
+                <div class="col-6 ps-0 text-white">
+                    <img src="../assets/images/logo.png" alt="Inglês para devs" class="img img-fluid w-75">
+                </div>
+                <div class="col-6 d-flex justify-content-end pe-0">
+                    <a class="btn mb-2 login-button text-center" id="loginButton" href="../login/login.html"
+                        role="button" hidden>
+                        <span class="icon login-icon"></span>
+                    </a>
+
+                    <div id="loginDiv" class="d-flex align-items-center justify-content-center my-2" hidden>
+                        <p class="me-3 text-white" id="welcome" hidden>Bem vindo(a), usuário</p>
+                        <figure class="user-image rounded-circle m-0" hidden onclick="redirectToAlterarCadastro()">
+                            <i class="fa-solid fa-user-large  icon-modify"
+                                style=" font-size: xx-large; padding:2px; margin:6px ; display:block;"></i>
+                            <img src="" alt="">
+                        </figure>
+                        <button onclick="logout()" hidden style="border-radius:20px;"><i
+                                class="fa-solid fa-user-large-slash" style="border-radius: 20px;"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg px-0">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pagina-inicial/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../testeIngles/index.html">Teste seu Inglês</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../dicionario-dev/index.html">Dicionário dos Devs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../forumTopicos/index.html">Fórum</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active-navlink"
+                                        href="../plano de estudos-listar/index.html">Planos de
+                                        Estudos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../proeficiencia/index.html">Exames de proficiência</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../depoimentos/index.html">Depoimentos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="container align-self-stretch flex-grow-1 mt-5">
+        <main class="main-content">
+            <div class="row">
+                <form class="col-sm-6" id="formPassos">
+
+                    <h1 class="d-inline-block" id="tituloPlano"></h1>
+                    <span id="likes"></span>
+
+                    <div class="row">
+                        <div class="col-sm-6 d-flex flex-column" id="passosEven">
+                        </div>
+                        <div class="col-sm-6 d-flex flex-column" id="passosOdd">
+                        </div>
+                    </div>
+                    <p id="toast">
+                    </p>
+                </form>
+                <div class="col-sm-6 text-center">
+                    <h1>Confira outros planos de estudos</h1>
+
+                    <div class="other_plans">
+                        <h2>Básico</h2>
+                        <ol id="olBasicos">
+                        </ol>
+                    </div>
+
+                    <div class="other_plans">
+                        <h2>Intermediário</h2>
+                        <ol id="olIntermediarios">
+                        </ol>
+                    </div>
+
+                    <div class="other_plans">
+                        <h2>Avançado</h2>
+                        <ol id="olAvancados">
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+    <div class="container p-0">
+        <footer class="footer m-auto">
+            <div class="row text-white d-flex">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <p class="m-0">Siga-nos:</p>
+
+                    <button class="icon-button bg-transparent ms-1 border-0">
+                        <span class="icon instagram-icon"></span>
+                    </button>
+                    <button class="icon-button bg-transparent ms-1 border-0">
+                        <span class="icon twitter-icon"></span>
+                    </button>
+                    <button class="icon-button bg-transparent ms-1 border-0">
+                        <span class="icon facebook-icon"></span>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="row text-center text-white mt-2  border-0">
+                <p>&copy; 2022 Inglês para Devs</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inglês para Devs</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="../globalScript.js"></script>
+</head>
+
+<body onload="carregar()"
+    class="container-fluid page_background d-flex flex-column align-items-stretch justify-content-between h-100">
+    <div class="container">
+        <header class="header">
+            <div class="row d-flex justify-content-between" , id="meio04">
+                <div class="col-6 ps-0 border-black text-"><img src="../assets/images/logo.png" alt="Inglês para devs"
+                        class="img img-fluid w-75"></div>
+                <div class="col-6 text-end pe-0">
+                    <button class="btn mb-2 login-button">
+                        <span class="icon login-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg px-0">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../pagina-inicial/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../testeIngles/index.html">Teste seu Inglês</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../dicionario-dev/index.html">Dicionário dos Devs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active-navlink" href="../forumTopicos/index.html">Fórum</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../plano de estudos-listar/index.html">Planos de
+                                        Estudos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../proeficiencia/index.html">Exames de proficiência</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../depoimentos/index.html">Depoimentos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Page Container -->
+        <div class="container" style="max-width:1400px;margin-top:80px" , id="meio04">
+            <!-- The Grid -->
+            <div class="w3-row row">
+                <!-- Left Column -->
+                <div class="w3-col m3 col-md-3">
+                    <!-- Profile -->
+                    <div class="w3-card w3-round w3-white">
+                        <div class="w3-container">
+                            <h4 class="w3-center">Meu Perfil</h4>
+                            <p class="w3-center"><img src="./Avatares/Pedro.jpeg" class="w3-circle"
+                                    style="height:106px;width:106px" alt="Avatar"></p>
+                            <hr>
+                            <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Dev Júnior</p>
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> São Paulo, BR</p>
+                            <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> 15 de Janeiro</p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- Accordion -->
+                    <div class="w3-card w3-round">
+                        <div class="w3-white">
+                            <button onclick="myFunction('Demo1')"
+                                class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                    class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Meus Grupos</button>
+                            <div id="Demo1" class="w3-hide w3-container">
+                                <p>Some text..</p>
+                            </div>
+                            <button onclick="myFunction('Demo2')"
+                                class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                    class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Meus Eventos</button>
+                            <div id="Demo2" class="w3-hide w3-container">
+                                <p>Some other text..</p>
+                            </div>
+                            <button onclick="myFunction('Demo3')"
+                                class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                    class="fa fa-users fa-fw w3-margin-right"></i> Meus Amigos </button>
+                            <div id="Demo3" class="w3-hide w3-container">
+                                <div class="w3-row-padding">
+                                    <br>
+                                    <div class="w3-half">
+                                        <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+                                    </div>
+                                    <div class="w3-half">
+                                        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                                    </div>
+                                    <div class="w3-half">
+                                        <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+                                    </div>
+                                    <div class="w3-half">
+                                        <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+                                    </div>
+                                    <div class="w3-half">
+                                        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                                    </div>
+                                    <div class="w3-half">
+                                        <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- Interests -->
+                    <div class="w3-card w3-round w3-white w3-hide-small">
+                        <div class="w3-container" , id="meio03">
+                            <p>Interesses</p>
+                            <p>
+                                <span class="w3-tag w3-small w3-theme-d5">Notícias</span>
+                                <span class="w3-tag w3-small w3-theme-d4">Mundo Dev</span>
+                                <span class="w3-tag w3-small w3-theme-d3">Dicionário Dev</span>
+                                <span class="w3-tag w3-small w3-theme-d2">Lembretes</span>
+                                <span class="w3-tag w3-small w3-theme-d1">Currículo</span>
+                                <span class="w3-tag w3-small w3-theme">Dicas</span>
+                                <span class="w3-tag w3-small w3-theme-l1">Exame</span>
+                                <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                                <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                                <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                                <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- Alert Box -->
+                    <div
+                        class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+                        <span onclick="this.parentElement.style.display='none'"
+                            class="w3-button w3-theme-l3 w3-display-topright">
+                            <i class="fa fa-remove"></i>
+                        </span>
+                        <p><strong>Olá!</strong></p>
+                        <p>Algumas pessoas visitaram seu perfil. Descubra quem.</p>
+                    </div>
+
+                    <!-- End Left Column -->
+                </div>
+
+                <!-- Middle Column -->
+
+                <div class="col-md-9">
+
+
+
+                    <div class="" , id="meio">
+
+                        <div class="media">
+
+                            <div class="media-body" , id="meio02">
+
+
+
+
+
+
+                            </div>
+                            <div class="respostameio">
+                                <form class="d-flex flex-column" id="form_responder">
+                                    <textarea name="resposta" id="resposta" cols="30" rows="10"
+                                        style=" background-color: black;"></textarea>
+                                    <button id="btn_responder" type="submit" ,
+                                        style="background-color: #59359c ; border-color: #59359c;"> Responder</button>
+                                </form>
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- End Middle Column -->
+                </div>
+
+                <!-- Right Column -->
+                <!-- <div class="w3-col m2 col-md-3">
+                    <div class="w3-card w3-round w3-white w3-center">
+                        <div class="w3-container">
+                            <p>Próximo Evento:</p>
+                            <img src="/src/forumTopicoExpandido/Avatares/Webinar .png" alt="Forest" style="width:100%;">
+                            <p><strong>Webinar com Devs</strong></p>
+                            <p>Sexta-feira às 21:00</p>
+                            <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="w3-card w3-round w3-white w3-center">
+                        <div class="w3-container">
+                            <p>Solicitação de amizade</p>
+                            <img src="/src/forumTopicoExpandido/Avatares/solicitação .png" alt="Avatar"
+                                style="width:50%"><br>
+                            <span>Rafdevbr</span>
+                            <div class="w3-row w3-opacity">
+                                <div class="w3-half">
+                                    <button class="w3-button w3-block w3-green w3-section" title="Accept"><i
+                                            class="fa fa-check"></i></button>
+                                </div>
+                                <div class="w3-half">
+                                    <button class="w3-button w3-block w3-red w3-section" title="Decline"><i
+                                            class="fa fa-remove"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                        <p>ADS</p>
+                    </div>
+                    <br>
+
+                    <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+                        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+                    </div>
+
+                
+                </div> -->
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+        <br>
+
+
+        <div class="container p-0">
+            <footer class="footer m-auto">
+                <div class="row text-white d-flex">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <p class="m-0">Siga-nos:</p>
+
+                        <button class="icon-button bg-transparent ms-1 border-0">
+                            <span class="icon instagram-icon"></span>
+                        </button>
+                        <button class="icon-button bg-transparent ms-1 border-0">
+                            <span class="icon twitter-icon"></span>
+                        </button>
+                        <button class="icon-button bg-transparent ms-1 border-0">
+                            <span class="icon facebook-icon"></span>
+                        </button>
+
+                    </div>
+
+                </div>
+                <div class="row text-center text-white mt-2  border-0">
+                    <p>&copy; 2022 Inglês para Devs</p>
+                </div>
+            </footer>
+        </div>
+
+</body>
+
+</html>

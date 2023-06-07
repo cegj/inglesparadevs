@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inglês para Devs</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./scripts.js"></script>
+</head>
+
+<body class="container-fluid page_background d-flex flex-column align-items-stretch justify-content-between h-100"
+    onload="carregarDados()">
+    <div class="container">
+        <header class="header">
+            <div class="row d-flex justify-content-between">
+                <div class="col-6 ps-0 text-white">
+                    <img src="../assets/images/logo.png" alt="Inglês para devs" class="img img-fluid w-75">
+                </div>
+                <div class="col-6 d-flex justify-content-end pe-0">
+                    <a class="btn mb-2 login-button text-center" id="loginButton" href="../login/login.html"
+                        role="button" hidden>
+                        <span class="icon login-icon"></span>
+                    </a>
+
+                    <div id="loginDiv" class="d-flex align-items-center justify-content-center my-2" hidden>
+                        <p class="me-3 text-white" id="welcome" hidden>Bem vindo(a), usuário</p>
+                        <figure class="user-image rounded-circle m-0" hidden onclick="redirectToAlterarCadastro()">
+                            <img src="" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg px-0">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pagina-inicial/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../testeIngles/index.html">Teste seu Inglês</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../dicionario-dev/index.html">Dicionário dos Devs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../forumTopicos/index.html">Fórum</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active-navlink"
+                                        href="../plano de estudos-listar/index.html">Planos de
+                                        Estudos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../proeficiencia/index.html">Exames de proficiência</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../depoimentos/index.html">Depoimentos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="container align-self-stretch flex-grow-1 mt-5">
+        <main class="row d-flex align-items-center justify-content-center">
+            <h1 class="text-center">Crie seu plano de estudos</h1>
+            <form class="col-xl-6 col-lg-7 col-md-8 col-sm-9 col-xm-12" id="form_criacao">
+                <section class="row">
+                    <div class="col-sm-12">
+                        <label for="nome_plano">Nome do plano de estudos</label>
+                        <input type="text" name="name" class="form-control" id="nome_plano" placeholder="Nome do plano">
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col-sm-12">
+                        <label for="nivel_plano">Nível do plano de estudos</label>
+                        <select class="form-select" name="level" aria-label="Selecione o nível de dificuldade do plano"
+                            id="nome_plano">
+                            <option value="1">Básico</option>
+                            <option value="2">Intermediário</option>
+                            <option value="3">Avançado</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="row g-3">
+
+                    <div class="col-sm-9">
+                        <label for="nome_plano">Passo a ser estudado</label>
+                        <input type="text" name="plano" class="form-control" id="nome_passo"
+                            placeholder="Nome do passo">
+                    </div>
+                    <div class="col-sm-3 d-flex align-items-end">
+                        <button type="button" class="btn btn-create w-100"
+                            onclick="adicionarPassos()">Adicionar</button>
+                    </div>
+
+                    <ul class="row d-flex flex-wrap" id="list_passos">
+                    </ul>
+                </section>
+                <button class="btn btn-create" type="submit">Criar</button>
+
+            </form>
+        </main>
+    </div>
+
+
+    <div class="container p-0">
+        <footer class="footer m-auto">
+            <div class="row text-white d-flex">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <p class="m-0">Siga-nos:</p>
+
+                    <button class="icon-button bg-transparent ms-1 border-0">
+                        <span class="icon instagram-icon"></span>
+                    </button>
+                    <button class="icon-button bg-transparent ms-1 border-0">
+                        <span class="icon twitter-icon"></span>
+                    </button>
+                    <button class="icon-button bg-transparent ms-1 border-0">
+                        <span class="icon facebook-icon"></span>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="row text-center text-white mt-2  border-0">
+                <p>&copy; 2022 Inglês para Devs</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

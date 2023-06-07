@@ -1,0 +1,77 @@
+body {
+  min-height: 100vh;
+  background-color: rgba(17, 17, 17, 0.85);
+}
+
+/*Icons*/
+span.login-icon {
+  background-image: url(./assets/icons/log-in.svg);
+}
+
+span.instagram-icon {
+  background-image: url(./assets/icons/instagram.svg);
+}
+
+span.facebook-icon {
+  background-image: url(./assets/icons/facebook.svg);
+}
+
+span.twitter-icon {
+  background-image: url(./assets/icons/twitter.svg);
+}
+
+span.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/*Header properties*/
+button.login-button {
+  background-color: #ffda15;
+}
+
+.navbar-nav a.active-navlink {
+  color: #ffda15 !important;
+}
+
+.navbar-nav a.active-navlink:hover {
+  font-weight: 400 !important;
+}
+
+nav.navbar {
+  background-color: #59359c;
+}
+
+.navbar-nav a.nav-link {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.navbar-nav a.nav-link:hover {
+  font-weight: 700;
+}
+
+button.navbar-toggler {
+  border: 1px solid white;
+}
+
+button.navbar-toggler .navbar-toggler-icon {
+  background-image: url(./assets/icons/menu.svg);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #ffffff;
+}
+
+.main-content {
+}
+
+/*Footer properties*/
+.footer {
+  background-color: #59359c;
+}
